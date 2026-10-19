@@ -1,0 +1,264 @@
+/* ==========================================================================
+   DUEZY DESIGN SYSTEM — "Get paid. Without the chase."
+   Professional Fintech SaaS — Clean, Restrained, Trustworthy
+   ========================================================================== */
+
+:root {
+  /* ── Brand ── */
+  --brand: #10B981;
+  --brand-hover: #059669;
+  --brand-subtle: rgba(16, 185, 129, 0.10);
+  --brand-border: rgba(16, 185, 129, 0.25);
+
+  /* ── Semantic ── */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  --info: #6366F1;
+
+  --success-subtle: rgba(16, 185, 129, 0.10);
+  --warning-subtle: rgba(245, 158, 11, 0.10);
+  --danger-subtle: rgba(239, 68, 68, 0.10);
+  --info-subtle: rgba(99, 102, 241, 0.10);
+
+  --success-border: rgba(16, 185, 129, 0.25);
+  --warning-border: rgba(245, 158, 11, 0.25);
+  --danger-border: rgba(239, 68, 68, 0.25);
+  --info-border: rgba(99, 102, 241, 0.25);
+
+  /* ── Vendor ── */
+  --whatsapp: #25D366;
+  --razorpay: #0C2340;
+  --razorpay-blue: #0A85EA;
+
+  /* ── Surfaces (Dark) ── */
+  --bg-page: #0A0E16;
+  --bg-surface: #111827;
+  --bg-surface-raised: #1A2232;
+  --bg-surface-overlay: #1E293B;
+  --bg-input: #0F172A;
+  --bg-hover: rgba(255, 255, 255, 0.04);
+
+  /* ── Borders ── */
+  --border-default: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --border-focus: rgba(16, 185, 129, 0.5);
+
+  /* Keep legacy aliases for existing classes */
+  --bg-main: var(--bg-page);
+  --bg-card: var(--bg-surface);
+  --bg-card-hover: var(--bg-surface-raised);
+  --border-subtle: var(--border-default);
+  --border-medium: var(--border-strong);
+  --border-glass: var(--border-default);
+  --border-active: var(--border-focus);
+  --bg-surface-glass: rgba(17, 24, 39, 0.75);
+  --bg-surface-elevated: var(--bg-surface-raised);
+
+  /* ── Typography ── */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+
+  --text-2xl: 1.75rem;    /* 28px — page titles */
+  --text-xl: 1.25rem;     /* 20px — section titles */
+  --text-lg: 1rem;        /* 16px — card titles */
+  --text-base: 0.875rem;  /* 14px — body */
+  --text-sm: 0.8125rem;   /* 13px — secondary */
+  --text-xs: 0.75rem;     /* 12px — captions */
+  --text-xxs: 0.6875rem;  /* 11px — micro labels */
+
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+
+  /* ── Text Colors ── */
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-tertiary: #64748B;
+  --text-muted: #475569;
+  --text-inverse: #0A0E16;
+
+  /* ── Spacing ── */
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+
+  /* ── Radii ── */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* ── Shadows (subtle, no glow) ── */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.15);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-overlay: 0 16px 48px rgba(0, 0, 0, 0.5);
+
+  /* Legacy aliases */
+  --shadow-glow: none;
+  --shadow-glow-purple: none;
+  --primary: var(--brand);
+  --primary-hover: var(--brand-hover);
+  --primary-glow: transparent;
+  --primary-light: var(--brand-subtle);
+  --secondary: var(--info);
+  --secondary-hover: #4F46E5;
+  --secondary-glow: transparent;
+  --secondary-light: var(--info-subtle);
+  --accent: var(--warning);
+  --accent-glow: transparent;
+  --accent-light: var(--warning-subtle);
+  --danger-glow: transparent;
+  --danger-light: var(--danger-subtle);
+
+  /* ── Transitions ── */
+  --transition-fast: 0.12s ease;
+  --transition-normal: 0.2s ease;
+  --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ── Light Theme ── */
+[data-theme="light"] {
+  --bg-page: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-raised: #F1F5F9;
+  --bg-surface-overlay: #FFFFFF;
+  --bg-input: #F8FAFC;
+  --bg-hover: rgba(0, 0, 0, 0.03);
+
+  --border-default: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.14);
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-tertiary: #64748B;
+  --text-muted: #94A3B8;
+  --text-inverse: #FFFFFF;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100vh;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* No ambient glow blobs — removed for professional appearance */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: var(--leading-tight);
+}
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+a:hover { color: var(--brand-hover); }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: var(--radius-full); }
+::-webkit-scrollbar-thumb:hover { background: var(--text-tertiary); }
+
+/* ── Focus Visible ── */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+button:focus-visible, [role="button"]:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* ── Utility: Badge ── */
+.badge-glow-green {
+  background: var(--success-subtle);
+  color: var(--success);
+  border: 1px solid var(--success-border);
+}
+.badge-glow-purple {
+  background: var(--info-subtle);
+  color: var(--info);
+  border: 1px solid var(--info-border);
+}
+.badge-glow-amber {
+  background: var(--warning-subtle);
+  color: var(--warning);
+  border: 1px solid var(--warning-border);
+}
+.badge-glow-red {
+  background: var(--danger-subtle);
+  color: var(--danger);
+  border: 1px solid var(--danger-border);
+}
+
+/* ── Glass Panels (legacy) ── */
+.glass-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+}
+.glass-panel-elevated {
+  background: var(--bg-surface-raised);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+}
+
+/* ── Animations ── */
+@keyframes slideUpFade {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes checkmarkPop {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); opacity: 1; }
+}
+.animate-fade-in {
+  animation: slideUpFade 0.25s ease forwards;
+}
+.animate-pop {
+  animation: checkmarkPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
